@@ -7,7 +7,7 @@
     // Função para validar o reCAPTCHA
     function validarRecaptcha() {
       return new Promise((resolve, reject) => {
-        const chave_secreta = "6LeIxAcTAAAAAGG-vFI1TnRWxMZNFuojJ4WifJWe";
+        const chave_secreta = "6LesGbgpAAAAAMCqkJ4wY4-5j-yySLMW07JpyI8Z";
         const resposta_recaptcha = grecaptcha.getResponse();
 
         const url = "https://www.google.com/recaptcha/api/siteverify";
@@ -55,7 +55,7 @@
 <body>
   <h1>Validação do reCAPTCHA</h1>
   <form onsubmit="enviarFormulario(event)">
-    <div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div>
+    <div class="g-recaptcha" data-sitekey="6LesGbgpAAAAADzGDZlDP4W4P4Zbw8GjzO4nwCIp"></div>
     <br>
     <button type="submit">Enviar</button>
   </form>
